@@ -1,0 +1,4 @@
+export { default as Cadastro } from './Registration'
+export { default as Leads } from './Leads'
+export { default as Login } from './Login'
+export { default as Perfil } from './Perfil'
