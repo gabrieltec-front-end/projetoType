@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 //PAGE
 
-import { Login, Cadastro } from './page'
+import { Login, Cadastro, Home, Leads, Perfil } from './page'
 
 function App() {
   return (
@@ -14,13 +14,13 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />}>
           CADASTRO
         </Route>
-        <Route path="/home" element={<>HOME</>}>
+        <Route path="/home" element={<Home />}>
           HOME
         </Route>
-        <Route path="/leads" element={<>LEADS</>}>
+        <Route path="/leads" element={<Leads />}>
           LEADS
         </Route>
-        <Route path="/perfil" element={<>PERFIL</>}>
+        <Route path="/perfil" element={<Perfil />}>
           PERFIL
         </Route>
       </Routes>
