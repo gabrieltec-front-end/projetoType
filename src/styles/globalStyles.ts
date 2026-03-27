@@ -3,8 +3,8 @@ import { createGlobalStyle, DefaultTheme } from 'styled-components'
 export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
 
     body,html{
-     background-color: ${(props) => props.theme};
-     color:${(props) => props.theme}
+     background-color: ${(props) => props.theme.appBackground};
+     color:${(props) => props.theme};
         margin:0;
         padding:0;
         font-family: "Inter",sans-serif
