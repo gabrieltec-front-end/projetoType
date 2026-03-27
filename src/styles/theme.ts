@@ -1,8 +1,8 @@
-import { Theme } from '@/types'
+import { Theme } from 'styled-components'
 
-export const lightThemes: Theme = {
-  appBackground: '#060B26',
-  appColor: '#FFF',
+export const lighThemes: Theme = {
+  appBackground: 'white',
+  appColor: 'black',
   appDefaultStroke: '#21497D',
   appLogo: 'dnc-logo-white.svg',
   appSkeletomFrom: '#060B26',
