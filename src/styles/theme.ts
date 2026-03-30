@@ -41,7 +41,7 @@ export const lighThemes: Theme = {
 }
 
 export const darkTheme: Theme = {
-  appBackground: '#060B26',
+  appBackground: 'green',
   appColor: '#FFF',
   appDefaultStroke: '#21497D',
   appLogo: 'dnc-logo-white.svg',
