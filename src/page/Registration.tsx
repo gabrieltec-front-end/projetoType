@@ -24,7 +24,7 @@ function Resgistration() {
                 <StyledLogo />
               </Box>
               <Box sx={{ marginBottom: Rem(24) }}>
-                <StyledH1>Faça seu cadastro</StyledH1>
+                <StyledH1>Faça seu cadastro agora</StyledH1>
                 <StyledH3>Sua senha deve ter:</StyledH3>
                 <StyledUl>
                   <li>Entre 8 e 16 caracteres;</li>
