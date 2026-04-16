@@ -1,16 +1,26 @@
 import { Formulario } from '../types'
+import Rem from '../utils/pxToRem'
+import { StyledButton } from './StyledButton'
+import { StyledInput } from './StyledInput'
+import styled from 'styled-components'
+
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  row-gap: ${Rem(16)};
+`
 
 function FormularioComponente(props: Formulario) {
   const { input, button, mensagem } = props
 
   return (
-    <form>
+    <StyledForm>
       {input.map((inputProps, index) => (
-        <input key={index} {...inputProps}></input>
+        <StyledInput key={index} {...inputProps} />
       ))}
 
       {button.map((buttonProps, index) => (
-        <button key={index} {...buttonProps}></button>
+        <StyledButton key={index} {...buttonProps} />
       ))}
 
       {mensagem && (
@@ -18,7 +28,7 @@ function FormularioComponente(props: Formulario) {
           {mensagem.msg}
         </div>
       )}
-    </form>
+    </StyledForm>
   )
 }
 

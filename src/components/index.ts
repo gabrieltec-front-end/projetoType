@@ -1,3 +1,6 @@
 export * from './BannerImage'
-
+export * from './StyledButton'
+export * from './StyledInput'
+export * from './TypegraphiesComp'
+export * from './Logo'
 export { default as FormularioComponentes } from './FormularioComp'

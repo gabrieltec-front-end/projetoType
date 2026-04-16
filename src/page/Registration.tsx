@@ -1,6 +1,8 @@
 import { Box, Grid, Container } from '@mui/material'
 
-import { BannerImage } from '../components'
+import { BannerImage, StyledLogo } from '../components'
+import Rem from '../utils/pxToRem'
+import { StyledH1, StyledH3, StyledUl, StyledSpan } from '../components'
 
 import { FormularioComponentes } from '../components'
 
@@ -18,19 +20,32 @@ function Resgistration() {
             }}
           >
             <Container maxWidth="sm">
+              <Box sx={{ marginBottom: Rem(24) }}>
+                <StyledLogo />
+              </Box>
+              <Box sx={{ marginBottom: Rem(24) }}>
+                <StyledH1>Faça seu cadastro</StyledH1>
+                <StyledSpan>Sua senha deve ter:</StyledSpan>
+                <StyledUl>
+                  <li>Entre 8 e 16 caracteres;</li>
+                  <li>Pelo menos uma letra maiúscula;</li>
+                  <li>Pelo menos um caractere especial.</li>
+                  <li>Pelo menos um número</li>
+                </StyledUl>
+              </Box>
               <FormularioComponentes
                 input={[
                   { type: 'email', placeholder: 'E-mail' },
                   { type: 'password', placeholder: 'Senha' },
                 ]}
                 button={[
-                  { type: 'submit', children: 'Enviar', className: 'primary' },
+                  { className: 'primary', type: 'submit', children: 'Enviar' },
                 ]}
                 mensagem={{ type: 'success', msg: 'SUCESSO!!!!' }}
               />
             </Container>
           </Grid>
-          <Grid size={{ sm: 6 }} sx={{ display: { sx: 'none', sm: 'block' } }}>
+          <Grid size={{ sm: 6 }} sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Container maxWidth="sm">
               <BannerImage />
             </Container>

@@ -7,6 +7,7 @@ export const lighThemes: Theme = {
   appLogo: 'dnc-logo-white.svg',
   appSkeletomFrom: '#060B26',
   appSkeletomTo: '#21497D',
+  background: 'url(dnc-logo-black.svg)',
   buttons: {
     alert: '#E80000',
     alertColor: '#FFF',
@@ -25,7 +26,7 @@ export const lighThemes: Theme = {
     warning: '#F7A300',
   },
   textInput: {
-    active: '#0F1535',
+    active: '#fff',
     activeColor: '#FFF',
     borderColor: '#21497D',
     disabled: '#282D49',
@@ -47,6 +48,7 @@ export const darkTheme: Theme = {
   appLogo: 'dnc-logo-white.svg',
   appSkeletomFrom: '#060B26',
   appSkeletomTo: '#21497D',
+  background: 'url(dnc-logo-white.svg)',
   buttons: {
     alert: '#E80000',
     alertColor: '#FFF',
