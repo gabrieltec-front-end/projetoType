@@ -2,7 +2,7 @@ import { Box, Grid, Container } from '@mui/material'
 
 import { BannerImage, StyledLogo } from '../components'
 import Rem from '../utils/pxToRem'
-import { StyledH1, StyledH3, StyledUl, StyledSpan } from '../components'
+import { StyledH1, StyledH3, StyledUl } from '../components'
 
 import { FormularioComponentes } from '../components'
 
