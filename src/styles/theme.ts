@@ -7,6 +7,7 @@ export const lighThemes: Theme = {
   appLogo: 'dnc-logo-white.svg',
   appSkeletomFrom: '#060B26',
   appSkeletomTo: '#21497D',
+  background: 'url(dnc-logo-black.svg)',
   buttons: {
     alert: '#E80000',
     alertColor: '#FFF',
@@ -47,6 +48,7 @@ export const darkTheme: Theme = {
   appLogo: 'dnc-logo-white.svg',
   appSkeletomFrom: '#060B26',
   appSkeletomTo: '#21497D',
+  background: 'url(dnc-logo-white.svg)',
   buttons: {
     alert: '#E80000',
     alertColor: '#FFF',
