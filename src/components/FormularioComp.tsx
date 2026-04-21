@@ -1,4 +1,6 @@
 import { Formulario } from '../types'
+import { StyledInput } from './Inputsprops'
+import { StyledButton } from './Buttonsprops'
 
 function FormularioComponente(props: Formulario) {
   const { input, button, mensagem } = props
@@ -6,11 +8,11 @@ function FormularioComponente(props: Formulario) {
   return (
     <form>
       {input.map((inputProps, index) => (
-        <input key={index} {...inputProps}></input>
+        <StyledInput key={index} {...inputProps} />
       ))}
 
       {button.map((buttonProps, index) => (
-        <button key={index} {...buttonProps}></button>
+        <StyledButton className="primary" key={index} {...buttonProps} />
       ))}
 
       {mensagem && (
