@@ -1,4 +1,6 @@
 export * from './BannerImage'
 export * from './Logo'
 export * from './TypegraphiesComp'
+export * from './Inputsprops'
+export * from './Buttonsprops'
 export { default as FormularioComponentes } from './FormularioComp'
