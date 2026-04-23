@@ -4,3 +4,5 @@ export * from './TypegraphiesComp'
 export * from './Inputsprops'
 export * from './Buttonsprops'
 export { default as FormularioComponentes } from './FormularioComp'
+
+export { default as Header } from './Header'

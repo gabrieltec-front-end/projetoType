@@ -1,5 +1,12 @@
+import { Header } from '@/components'
+
 function Perfil() {
-  return <h1>Perfil</h1>
+  return (
+    <>
+      <Header />
+      <h1>Perfil</h1>
+    </>
+  )
 }
 
 export default Perfil
