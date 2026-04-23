@@ -1,9 +1,15 @@
 import styled, { Theme } from 'styled-components'
 import Rem from '../utils/pxToRem'
 
-export const StyledLogo = styled.div<{ theme?: Theme }>`
-  background-image: ${(props) => props.theme.background};
+interface LogoProps {
+  height: number
+  width: number
+}
 
-  width: ${Rem(100)};
-  height: ${Rem(42)};
+export const StyledLogo = styled.div<LogoProps & { theme?: Theme }>`
+  background-image: ${(props) => props.theme.background};
+  background-size: cover;
+
+  height: ${(props) => Rem(props.height)};
+  width: ${(props) => Rem(props.width)};
 `

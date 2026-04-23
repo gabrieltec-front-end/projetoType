@@ -17,13 +17,28 @@ function Login() {
           sx={{ display: 'flex', alignItems: 'center', height: '100vh' }}
         >
           <Container maxWidth="sm">
-            <Box sx={{ marginBottom: Rem(24) }}>
-              <StyledLogo />
-            </Box>
-            <Box sx={{ marginBottom: Rem(24) }}>
+            <Grid
+              size={{ xs: 12, sm: 6 }}
+              sx={{
+                marginBottom: Rem(24),
+                display: 'flex',
+                justifyContent: { sm: 'left', xs: 'center' },
+              }}
+            >
+              <StyledLogo height={42} width={100} />
+            </Grid>
+
+            <Grid
+              size={{ xs: 12, sm: 6 }}
+              sx={{
+                marginBottom: Rem(24),
+
+                textAlign: { sm: 'left', xs: 'center' },
+              }}
+            >
               <StyledH1>Bem-vindo</StyledH1>
               <StyledH3> Digite sua senha e email para logar</StyledH3>
-            </Box>
+            </Grid>
             <FormularioComponente
               input={[
                 { type: 'email', className: 'primary', placeholder: 'Email' },
