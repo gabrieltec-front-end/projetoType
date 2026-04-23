@@ -25,7 +25,7 @@ function Login() {
                 justifyContent: { sm: 'left', xs: 'center' },
               }}
             >
-              <StyledLogo height={42} width={100} />
+              <StyledLogo height={42} width={82} />
             </Grid>
 
             <Grid
