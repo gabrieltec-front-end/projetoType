@@ -4,6 +4,7 @@ export * from './TypegraphiesComp'
 export * from './Inputsprops'
 export * from './Buttonsprops'
 export * from './CardComponente'
+export { default as AvatarComp } from './AvatarListComp'
 export { default as FormularioComponentes } from './FormularioComp'
 
 export { default as Header } from './Header'
