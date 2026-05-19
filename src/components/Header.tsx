@@ -23,11 +23,11 @@ function Header() {
             textAlign: 'center',
             justifyContent: 'space-between',
 
-            height: Rem(64),
+            height: Rem(80),
           }}
         >
           <Link to="/home">
-            <StyledLogo height={37} width={95} />
+            <StyledLogo height={40} width={95} />
           </Link>
           <Link to="/perfil">
             <Avatar
