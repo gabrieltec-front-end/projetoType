@@ -9,3 +9,4 @@ export { default as FormularioComponentes } from './FormularioComp'
 export { default as TableComp } from './TableComponente'
 
 export { default as Header } from './Header'
+export { default as Graphie } from './GraphiesComp'

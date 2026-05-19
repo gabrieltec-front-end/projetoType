@@ -7,7 +7,6 @@ const StyledTable = styled.div<{ theme?: Theme }>`
   overflow-x: auto;
   width: 100%;
 
-  background-color: ${(props) => props.theme.appBackground};
   table {
     width: 100%;
     border-collapse: collapse;
@@ -44,8 +43,8 @@ function TableComponente(props: TableComp) {
       <table>
         <thead>
           <tr>
-            {headers.map((header, index) => (
-              <th key={index}>{header}</th>
+            {headers.map((headers, index) => (
+              <th key={index}>{headers}</th>
             ))}
           </tr>
         </thead>
