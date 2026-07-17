@@ -10,9 +10,8 @@ function Perfil() {
     <>
       <Header />
       <StyledCard>
-        <StyledButton className="primary" onClick={contextTheme?.toggleTheme}>
-          trocar tema para{' '}
-          {contextTheme?.appTheme === 'light' ? 'escuro' : 'claro'}
+        <StyledButton onClick={contextTheme?.toggleTheme}>
+          Trocar Tema {contextTheme?.appTheme === 'light' ? 'Escuro' : 'Claro'}
         </StyledButton>
       </StyledCard>
     </>
